@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b14">
+  <meta name="description" content="ADAM ZAIDI — اكتشف خلفيات مذهلة لهاتفك وحاسوبك بدقة عالية.">
+  <title>ADAM ZAIDI — Wallpapers</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header wrap">
+    <a class="brand" href="#">
+      <img src="assets/logo.svg" alt="Adam Zaidi logo">
+      <span>ADAM <b>ZAIDI</b><small>WALLPAPER GALLERY</small></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#gallery" data-t="explore">استكشف</a>
+      <a href="#categories" data-t="categories">التصنيفات</a>
+      <a href="#about" data-t="about">عن الموقع</a>
+    </nav>
+    <div class="actions">
+      <button class="small-btn" id="favoritesBtn">♡ <span id="favCount">0</span></button>
+      <button class="small-btn lang" id="langBtn">EN</button>
+      <button class="small-btn menu" id="menuBtn">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><i></i><span data-t="eyebrow">خلفيات تليق بذوقك</span></div>
+        <h1><span data-t="line1">غيّر مظهر</span><br><em data-t="line2">شاشتك.</em></h1>
+        <p data-t="intro">اكتشف خلفيات مختارة للهاتف والحاسوب. تفاصيل مذهلة، ألوان ملهمة، وجودة عالية تجعل كل شاشة مختلفة.</p>
+        <div class="hero-buttons">
+          <a class="primary" href="#gallery"><span data-t="discover">اكتشف الخلفيات</span><b>↙</b></a>
+          <span class="quality">4K <i>•</i> 8K <i>•</i> HD</span>
+        </div>
+        <div class="stats">
+          <div><strong>4K+</strong><small data-t="quality">جودة عالية</small></div>
+          <div><strong>FREE</strong><small data-t="free">تصفح مجاني</small></div>
+          <div><strong>∞</strong><small data-t="inspire">إلهام بلا حدود</small></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-photo photo-back"></div><div class="hero-photo photo-front"></div>
+        <div class="floating">✦ &nbsp; CURATED WALLPAPERS</div>
+        <div class="art-caption">ADAM ZAIDI <span>— 001</span></div>
+      </div>
+    </section>
+
+    <section class="gallery wrap" id="gallery">
+      <div class="section-top">
+        <div><div class="eyebrow"><i></i><span data-t="collection">المجموعة</span></div><h2 data-t="find">اعثر على خلفيتك القادمة</h2></div>
+        <label class="search"><span>⌕</span><input id="search" type="search" placeholder="ابحث عن خلفية..." data-ph="search"><kbd>⌘ K</kbd></label>
+      </div>
+      <div class="filters" id="categories">
+        <button class="filter active" data-cat="all" data-t="all">الكل</button>
+        <button class="filter" data-cat="nature" data-t="nature">الطبيعة</button>
+        <button class="filter" data-cat="cars" data-t="cars">السيارات</button>
+        <button class="filter" data-cat="space" data-t="space">الفضاء</button>
+        <button class="filter" data-cat="minimal" data-t="minimal">بسيطة</button>
+        <button class="filter" data-cat="ocean" data-t="ocean">البحار</button>
+        <button class="filter" data-cat="favorites" data-t="favorites">المفضلة ♡</button>
+      </div>
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden><b>✧</b><h3 data-t="noResults">لا توجد نتائج</h3><p data-t="tryAgain">جرّب كلمة بحث أو تصنيفًا آخر.</p></div>
+      <div class="more-row"><button class="outline" id="more" data-t="more">عرض المزيد ↓</button></div>
+    </section>
+
+    <section class="about wrap" id="about">
+      <div class="az-mark">AZ<span>↗</span></div>
+      <div><div class="eyebrow"><i></i><span data-t="aboutTag">عن ADAM ZAIDI</span></div><h2 data-t="aboutTitle">شاشتك، بأسلوبك.</h2><p data-t="aboutText">منصة لاكتشاف خلفيات جميلة ومختارة بعناية. تصفح، احفظ ما يعجبك، وافتح الصور بجودتها الكبيرة لتناسب أجهزتك.</p></div>
+      <a href="#gallery" class="back-link" data-t="back">العودة إلى المعرض ↗</a>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <a class="brand" href="#"><img src="assets/logo.svg" alt=""><span>ADAM <b>ZAIDI</b><small>WALLPAPER GALLERY</small></span></a>
+    <p>© <span id="year"></span> ADAM ZAIDI. <span data-t="rights">جميع الحقوق محفوظة.</span></p>
+    <span class="footer-tag">MADE FOR YOUR SCREEN ✦</span>
+  </footer>
+
+  <div class="modal" id="modal">
+    <div class="shade" id="shade"></div>
+    <div class="modal-box"><button class="close" id="close">×</button><img id="preview" alt="Wallpaper preview"><div class="modal-bottom"><div><b id="previewName"></b><small id="previewMeta"></small></div><a class="primary" id="openImage" target="_blank" rel="noopener"><span data-t="openImage">فتح الصورة الأصلية</span> ↗</a></div></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
